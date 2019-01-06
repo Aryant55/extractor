@@ -5,8 +5,6 @@ import urllib
 url = "https://www.google.com/finance?q="
 stock = input("Enter your stock: ")
 url = url + stock
-data= urllib.request.urlopen(url).read()
-data1 = data.decode("utf-8")
 
 req = urllib.request.Request(url, headers={'User-Agent' : "Magic Browser"}) 
 data1 = urllib.request.urlopen( req )
